@@ -36,20 +36,20 @@ Reemplaza estos valores con la información real del negocio:
 3. **Dirección** — verifica la dirección exacta y, si quieres, el enlace del mapa.
 4. **Reseñas** — los testimonios son representativos; puedes sustituirlos por reseñas reales de Google.
 
-## 📸 Fotos para elevar el sitio (opcional)
+## 📸 Fotos
 
-El sitio luce completo con las fotos reales + arte CSS. Para llevarlo al
-siguiente nivel, puedes generar/tomar estas fotos profesionales y colocarlas en
-`assets/img/gen/` (te indico dónde usarlas en el HTML):
+Imágenes ya integradas en `assets/img/gen/`:
 
-| Archivo sugerido        | Uso                         | Formato | Idea de toma |
-|-------------------------|-----------------------------|---------|--------------|
-| `hero.jpg`              | Fondo del hero              | 16:9    | Mujer con cabello glossy / ambiente del salón, tonos blush y oro |
-| `service-hair.jpg`      | Servicio Hair Care          | 3:4     | Peinado/balayage en acción |
-| `service-nails.jpg`     | Servicio Uñas               | 3:4     | Manicure nude-rosa sobre mármol |
-| `service-spa.jpg`       | Servicio Spa                | 3:4     | Facial relajante, pétalos |
-| `service-barber.jpg`    | Servicio Barbershop         | 3:4     | Corte/barba de caballero |
-| `gallery-1..3.jpg`      | Galería                     | varios  | Detalles del local, clientas felices |
+| Archivo              | Uso                  | Estado |
+|----------------------|----------------------|--------|
+| `hero.jpg`           | Fondo del hero       | ✅ integrada (recortada y tratada) |
+| `service-hair.jpg`   | Servicio Hair Care   | ✅ integrada |
+| `service-nails.jpg`  | Servicio Uñas        | ✅ integrada |
+| `service-spa.jpg`    | Servicio Spa         | ✅ integrada |
+| `service-barber.jpg` | Servicio Barbershop  | ⏳ pendiente — la tarjeta usa un mosaico de marca mientras tanto |
+
+Para añadir la de Barbershop: coloca `service-barber.jpg` (formato 4:5, paleta
+negro cálido + oro + rosa) en `assets/img/gen/` y avísame para conectarla.
 
 Paleta para mantener coherencia: **rosa malva, oro champagne, negro cálido, crema.**
 
