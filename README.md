@@ -31,8 +31,8 @@ python3 -m http.server 8080
 
 Reemplaza estos valores con la información real del negocio:
 
-1. **WhatsApp** — en `index.html`, busca `507XXXXXXXX` y pon el número real.
-2. **Horario** — confirma los horarios reales (ahora: Lun–Sáb 9:00 a.m.–8:00 p.m.).
+1. **WhatsApp** — configurado como `6000-0000` (`wa.me/50760000000`). Ajusta si cambia.
+2. **Horario** — Lun–Sáb 9:00 a.m.–8:00 p.m., Dom cerrado (confirmado).
 3. **Dirección** — verifica la dirección exacta y, si quieres, el enlace del mapa.
 4. **Reseñas** — los testimonios son representativos; puedes sustituirlos por reseñas reales de Google.
 
