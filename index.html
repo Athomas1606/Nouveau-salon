@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nouveau Salon &amp; Spa — Belleza que se siente · Ciudad de Panamá</title>
+  <meta name="description" content="Nouveau Salon &amp; Spa — un santuario de belleza y bienestar en Ciudad de Panamá. Hair Care, Uñas, Spa, Barbershop y Boutique. Agenda tu cita." />
+  <meta name="theme-color" content="#15110F" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nouveau Salon &amp; Spa — Belleza que se siente" />
+  <meta property="og:description" content="Un santuario de estilo, cuidado y bienestar en el corazón de Ciudad de Panamá." />
+  <meta property="og:image" content="assets/img/real/sign.jpeg" />
+  <meta property="og:locale" content="es_PA" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Italianno&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ░░ Skip / Loader ░░ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__mark">
+      <svg viewBox="0 0 220 200" class="gem gem--loader" aria-hidden="true"><use href="#gem"/></svg>
+      <span class="loader__word">nouveau</span>
+    </div>
+  </div>
+
+  <!-- ░░ Reusable gem symbol ░░ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="gem" viewBox="0 0 220 200">
+      <g fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="20" y1="42" x2="200" y2="42"/>
+        <line x1="8" y1="66" x2="212" y2="66"/>
+        <line x1="20" y1="42" x2="8" y2="66"/>
+        <line x1="200" y1="42" x2="212" y2="66"/>
+        <line x1="20" y1="42" x2="60" y2="66"/>
+        <line x1="65" y1="42" x2="60" y2="66"/>
+        <line x1="65" y1="42" x2="110" y2="66"/>
+        <line x1="110" y1="42" x2="110" y2="66"/>
+        <line x1="110" y1="42" x2="160" y2="66"/>
+        <line x1="155" y1="42" x2="160" y2="66"/>
+        <line x1="155" y1="42" x2="212" y2="66"/>
+        <line x1="8" y1="66" x2="110" y2="184"/>
+        <line x1="60" y1="66" x2="110" y2="184"/>
+        <line x1="110" y1="66" x2="110" y2="184"/>
+        <line x1="160" y1="66" x2="110" y2="184"/>
+        <line x1="212" y1="66" x2="110" y2="184"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <!-- ░░ Navigation ░░ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#inicio" class="brand" aria-label="Nouveau Salon &amp; Spa — inicio">
+        <svg viewBox="0 0 220 200" class="gem brand__gem" aria-hidden="true"><use href="#gem"/></svg>
+        <span class="brand__text">
+          <span class="brand__script">nouveau</span>
+          <span class="brand__sub">Salon &amp; Spa</span>
+        </span>
+      </a>
+
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#bienvenida">Bienvenida</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a href="#contacto" class="btn btn--gold nav__cta">Agenda tu cita</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ░░ Mobile menu ░░ -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Móvil">
+      <a href="#bienvenida">Bienvenida</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto" class="btn btn--gold">Agenda tu cita</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- ░░ Hero ░░ -->
+    <section class="hero" id="inicio">
+      <div class="hero__lattice" aria-hidden="true"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="hero__content reveal">
+        <p class="eyebrow eyebrow--light">
+          <span class="eyebrow__dot">◆</span> Salon &middot; Spa &middot; Boutique &middot; Ciudad de Panamá
+        </p>
+
+        <h1 class="hero__title">
+          <span class="hero__script">Belleza</span>
+          <span class="hero__serif">que se siente.</span>
+        </h1>
+
+        <p class="hero__lede">
+          Un santuario de estilo, cuidado y bienestar en el corazón de la ciudad.
+          Cabello, uñas, spa y barbería — bajo un mismo techo, con la atención que mereces.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#contacto" class="btn btn--gold">Agenda tu cita</a>
+          <a href="#servicios" class="btn btn--ghost">Descubre los servicios</a>
+        </div>
+
+        <div class="hero__meta">
+          <span class="stars" aria-label="Calificación 4.1 sobre 5">★★★★<span class="stars__half">★</span></span>
+          <span>4.1 en Google · Reseñas de nuestras clientas</span>
+        </div>
+      </div>
+
+      <a href="#bienvenida" class="hero__scroll" aria-label="Desplázate hacia abajo">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ░░ Marquee ░░ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Hair Care</span><i>◆</i><span>Uñas</span><i>◆</i><span>Spa</span><i>◆</i><span>Barbershop</span><i>◆</i><span>Boutique</span><i>◆</i>
+        <span>Hair Care</span><i>◆</i><span>Uñas</span><i>◆</i><span>Spa</span><i>◆</i><span>Barbershop</span><i>◆</i><span>Boutique</span><i>◆</i>
+      </div>
+    </div>
+
+    <!-- ░░ Bienvenida ░░ -->
+    <section class="welcome section" id="bienvenida">
+      <div class="welcome__media reveal">
+        <div class="frame">
+          <img src="assets/img/real/interior-1.jpeg" alt="Interior de Nouveau Salon &amp; Spa con lámpara oro rosa y papel tapiz geométrico" loading="lazy" />
+        </div>
+        <div class="frame__tag">Nuestro espacio</div>
+      </div>
+
+      <div class="welcome__text reveal">
+        <p class="eyebrow"><span class="eyebrow__dot">◆</span> Bienvenida</p>
+        <h2 class="h2">Más que un salón,<br><em>una experiencia.</em></h2>
+        <p>
+          En <strong>Nouveau</strong> creemos que verse bien es solo el comienzo —
+          lo que de verdad buscamos es que te <em>sientas</em> bien. Cada detalle de
+          nuestro espacio, desde la luz cálida hasta las manos expertas de nuestro
+          equipo, está pensado para ofrecerte un momento de cuidado genuino.
+        </p>
+        <p>
+          Hair care, uñas, spa, barbería y una boutique con productos seleccionados.
+          Todo en un ambiente elegante y acogedor en Ciudad de Panamá.
+        </p>
+        <a href="#servicios" class="link-arrow">Conoce nuestros servicios <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <!-- ░░ Servicios ░░ -->
+    <section class="services section" id="servicios">
+      <header class="section-head reveal">
+        <p class="eyebrow"><span class="eyebrow__dot">◆</span> Servicios</p>
+        <h2 class="h2">El arte del cuidado personal</h2>
+        <p class="section-head__lede">
+          Un menú completo para tu belleza y bienestar, atendido por profesionales
+          que aman lo que hacen.
+        </p>
+      </header>
+
+      <div class="services__grid">
+
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="12" r="5"/><circle cx="11" cy="36" r="5"/>
+              <path d="M15 15 L40 33 M15 33 L40 15 M24 24 L40 24"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Hair Care</h3>
+          <p class="service-card__desc">
+            Corte, color y tratamientos que realzan tu cabello desde la raíz.
+          </p>
+          <ul class="service-card__list">
+            <li>Coloración &amp; Balayage</li>
+            <li>Alisado &amp; Keratina</li>
+            <li>Cortes &amp; Peinados</li>
+            <li>Tratamientos reparadores</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="18" y="6" width="12" height="28" rx="6"/>
+              <path d="M18 14 q6 -6 12 0"/>
+              <path d="M16 40 h16"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Uñas</h3>
+          <p class="service-card__desc">
+            Manos y pies impecables, con acabados que duran y enamoran.
+          </p>
+          <ul class="service-card__list">
+            <li>Manicure &amp; Pedicure</li>
+            <li>Esmaltado en gel</li>
+            <li>Uñas acrílicas</li>
+            <li>Nail art &amp; diseño</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M24 40 C12 32 8 22 14 16 c4 -4 8 -2 10 2 c2 -4 6 -6 10 -2 c6 6 2 16 -10 24Z"/>
+              <path d="M24 20 v20"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Spa</h3>
+          <p class="service-card__desc">
+            Rituales de relajación y cuidado de la piel para reconectar contigo.
+          </p>
+          <ul class="service-card__list">
+            <li>Faciales personalizados</li>
+            <li>Masajes relajantes</li>
+            <li>Depilación</li>
+            <li>Cuidado &amp; bienestar</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 8 L26 26"/><circle cx="32" cy="32" r="6"/>
+              <path d="M40 8 L30 18"/><path d="M22 30 l-6 6"/><circle cx="14" cy="38" r="4"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Barbershop</h3>
+          <p class="service-card__desc">
+            Estilo y precisión para él — un espacio pensado para el caballero.
+          </p>
+          <ul class="service-card__list">
+            <li>Corte de caballero</li>
+            <li>Arreglo de barba</li>
+            <li>Afeitado clásico</li>
+            <li>Cuidado masculino</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <p class="services__note reveal">
+        ¿Lista para tu próxima cita? <a href="#contacto">Escríbenos</a> y con gusto te
+        compartimos precios y disponibilidad.
+      </p>
+    </section>
+
+    <!-- ░░ Experiencia ░░ -->
+    <section class="experience" id="experiencia">
+      <div class="experience__lattice" aria-hidden="true"></div>
+      <div class="experience__inner section">
+        <header class="section-head section-head--center reveal">
+          <p class="eyebrow eyebrow--light"><span class="eyebrow__dot">◆</span> La experiencia Nouveau</p>
+          <h2 class="h2 h2--light">Detalles que marcan la diferencia</h2>
+        </header>
+
+        <div class="experience__grid">
+          <div class="value reveal">
+            <span class="value__num">01</span>
+            <h3>Manos expertas</h3>
+            <p>Un equipo de profesionales apasionados y en constante formación.</p>
+          </div>
+          <div class="value reveal">
+            <span class="value__num">02</span>
+            <h3>Productos premium</h3>
+            <p>Marcas de alta gama para resultados que cuidan y perduran.</p>
+          </div>
+          <div class="value reveal">
+            <span class="value__num">03</span>
+            <h3>Ambiente exclusivo</h3>
+            <p>Un espacio diseñado para tu confort, intimidad y descanso.</p>
+          </div>
+          <div class="value reveal">
+            <span class="value__num">04</span>
+            <h3>Atención personalizada</h3>
+            <p>Escuchamos lo que buscas y lo hacemos realidad, a tu manera.</p>
+          </div>
+        </div>
+
+        <div class="stats reveal">
+          <div class="stat"><span class="stat__num">4.1<i>★</i></span><span class="stat__label">Calificación en Google</span></div>
+          <div class="stat"><span class="stat__num">5<i>+</i></span><span class="stat__label">Servicios bajo un techo</span></div>
+          <div class="stat"><span class="stat__num">100%</span><span class="stat__label">Atención personalizada</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ Galería ░░ -->
+    <section class="gallery section" id="galeria">
+      <header class="section-head reveal">
+        <p class="eyebrow"><span class="eyebrow__dot">◆</span> Galería</p>
+        <h2 class="h2">Un vistazo a Nouveau</h2>
+      </header>
+
+      <div class="gallery__grid">
+        <figure class="gallery__item gallery__item--tall reveal">
+          <img src="assets/img/real/interior-1.jpeg" alt="Estación de lavado con lámpara oro rosa en Nouveau" loading="lazy" />
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="assets/img/real/sign.jpeg" alt="Letrero de Nouveau Salon &amp; Spa" loading="lazy" />
+        </figure>
+        <figure class="gallery__item gallery__item--quote reveal">
+          <blockquote>
+            <span class="gallery__mark">“</span>
+            Belleza que se siente.
+            <cite>— Nuestra filosofía</cite>
+          </blockquote>
+        </figure>
+        <figure class="gallery__item gallery__item--wide reveal">
+          <div class="gallery__placeholder">
+            <svg viewBox="0 0 220 200" class="gem" aria-hidden="true"><use href="#gem"/></svg>
+            <span>@nouveausalons</span>
+          </div>
+        </figure>
+      </div>
+      <p class="gallery__cta reveal">
+        Más momentos en Instagram
+        <a href="https://instagram.com/nouveausalons" target="_blank" rel="noopener">@nouveausalons →</a>
+      </p>
+    </section>
+
+    <!-- ░░ Testimonios ░░ -->
+    <section class="testimonials section">
+      <header class="section-head section-head--center reveal">
+        <p class="eyebrow"><span class="eyebrow__dot">◆</span> Lo que dicen</p>
+        <h2 class="h2">Clientas que vuelven</h2>
+      </header>
+
+      <div class="testimonials__grid">
+        <blockquote class="testimonial reveal">
+          <div class="stars">★★★★★</div>
+          <p>Salí sintiéndome renovada. El ambiente es precioso y el trato, impecable. Mi nuevo lugar de confianza.</p>
+          <cite>Mariana G.</cite>
+        </blockquote>
+        <blockquote class="testimonial reveal">
+          <div class="stars">★★★★★</div>
+          <p>El balayage me quedó justo como lo soñé. Se nota que aman lo que hacen y cuidan cada detalle.</p>
+          <cite>Valentina R.</cite>
+        </blockquote>
+        <blockquote class="testimonial reveal">
+          <div class="stars">★★★★★</div>
+          <p>Fui por un corte y terminé reservando spa. Un espacio elegante donde de verdad te consienten.</p>
+          <cite>Daniela P.</cite>
+        </blockquote>
+      </div>
+      <p class="testimonials__note reveal">Reseñas representativas de nuestras clientas.</p>
+    </section>
+
+    <!-- ░░ Contacto ░░ -->
+    <section class="contact" id="contacto">
+      <div class="contact__inner section">
+        <div class="contact__info reveal">
+          <p class="eyebrow eyebrow--light"><span class="eyebrow__dot">◆</span> Visítanos</p>
+          <h2 class="h2 h2--light">Reserva tu momento Nouveau</h2>
+          <p class="contact__lede">
+            Estamos en Ciudad de Panamá, a pasos del Parque Omar. Escríbenos para
+            agendar tu cita o resolver cualquier duda — será un placer atenderte.
+          </p>
+
+          <ul class="contact__list">
+            <li>
+              <span class="contact__label">Dirección</span>
+              Planta baja, PH Ilina Iatorraca,<br>
+              C. Matilde Obarrio de Mallet, San Francisco<br>
+              Ciudad de Panamá, Panamá
+            </li>
+            <li>
+              <span class="contact__label">Horario</span>
+              Lunes a Sábado · 9:00 a.m. – 8:00 p.m.<br>
+              Domingo · Cerrado
+            </li>
+            <li>
+              <span class="contact__label">Síguenos</span>
+              <a href="https://instagram.com/nouveausalons" target="_blank" rel="noopener">@nouveausalons</a>
+            </li>
+          </ul>
+
+          <div class="contact__actions">
+            <!-- TODO: reemplaza el número 507XXXXXXXX por el WhatsApp real del salón -->
+            <a href="https://wa.me/507XXXXXXXX?text=Hola%20Nouveau%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita"
+               class="btn btn--gold" target="_blank" rel="noopener">Agenda por WhatsApp</a>
+            <a href="https://instagram.com/nouveausalons" class="btn btn--ghost-light" target="_blank" rel="noopener">Escríbenos por Instagram</a>
+          </div>
+        </div>
+
+        <div class="contact__map reveal">
+          <iframe
+            title="Ubicación de Nouveau Salon &amp; Spa en Ciudad de Panamá"
+            src="https://www.google.com/maps?q=Nouveau%20Salon%20Spa%2C%20Calle%20Matilde%20Obarrio%20de%20Mallet%2C%20Panama&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ░░ Footer ░░ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <a href="#inicio" class="brand brand--footer" aria-label="Nouveau Salon &amp; Spa">
+        <svg viewBox="0 0 220 200" class="gem brand__gem" aria-hidden="true"><use href="#gem"/></svg>
+        <span class="brand__text">
+          <span class="brand__script">nouveau</span>
+          <span class="brand__sub">Salon &amp; Spa</span>
+        </span>
+      </a>
+
+      <nav class="footer__links" aria-label="Pie de página">
+        <a href="#bienvenida">Bienvenida</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <p class="footer__tag">Belleza que se siente.</p>
+    </div>
+    <div class="footer__bar">
+      <span>© <span id="year"></span> Nouveau Salon &amp; Spa · Ciudad de Panamá</span>
+      <a href="https://instagram.com/nouveausalons" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
