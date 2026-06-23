@@ -43,6 +43,39 @@
     });
   }
 
+  /* ---- Booking form -> WhatsApp ---- */
+  var WHATSAPP = "50760000000"; // número del salón (6000-0000)
+  var form = document.getElementById("bookingForm");
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var hint = document.getElementById("bookingHint");
+      var name = (document.getElementById("bf-name").value || "").trim();
+      var phone = (document.getElementById("bf-phone").value || "").trim();
+      var service = document.getElementById("bf-service").value || "";
+      var date = document.getElementById("bf-date").value || "";
+      var msg = (document.getElementById("bf-msg").value || "").trim();
+
+      if (!name || !phone || !service) {
+        if (hint) hint.textContent = "Por favor completa nombre, teléfono y servicio.";
+        return;
+      }
+
+      var lines = [
+        "Hola Nouveau ✨ Me gustaría reservar una cita:",
+        "• Nombre: " + name,
+        "• Teléfono: " + phone,
+        "• Servicio: " + service
+      ];
+      if (date) lines.push("• Fecha preferida: " + date);
+      if (msg) lines.push("• Mensaje: " + msg);
+
+      var url = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(lines.join("\n"));
+      if (hint) hint.textContent = "Abriendo WhatsApp con tu reserva...";
+      window.open(url, "_blank", "noopener");
+    });
+  }
+
   /* ---- Reveal on scroll ---- */
   var reveals = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {

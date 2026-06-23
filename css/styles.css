@@ -5,20 +5,20 @@
    ============================================================ */
 
 :root {
-  /* girly pink + gold palette, derived from the brand logo */
-  --cream:      #fcf6f2;
-  --blush:      #faeae4;   /* page background */
-  --blush-deep: #f3d8d0;
-  --petal:      #efc7bf;
-  --rose:       #d89b90;   /* primary dusty rose */
-  --rose-deep:  #b5736a;
-  --mauve:      #8e5a54;
-  --plum:       #4e2e2c;   /* dark text / dark blocks */
-  --wine:       #34201e;
+  /* girly pink + gold palette, guided by the salon's blush velvet interior */
+  --cream:      #fdf2ee;
+  --blush:      #f8d9d2;   /* page background — clearly pink */
+  --blush-deep: #f1c2b8;
+  --petal:      #ecb1a5;
+  --rose:       #db8c7f;   /* primary dusty rose */
+  --rose-deep:  #bd6c61;
+  --mauve:      #9b5d56;
+  --plum:       #4e2b29;   /* dark text / dark blocks */
+  --wine:       #341d1b;
   --gold:       #c2a14d;
   --gold-lt:    #e7cf93;
   --gold-dk:    #9c7c34;
-  --ink:        #4a302d;   /* body text (warm) */
+  --ink:        #4a2d2a;   /* body text (warm) */
   --white:      #ffffff;
 
   --gold-grad: linear-gradient(135deg, #e7cf93 0%, #c2a14d 48%, #a8862f 100%);
@@ -158,9 +158,10 @@ ul { list-style: none; }
 .hero__grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
 .hero__eyebrow { margin-bottom: 1.6rem; }
 .hero__title { font-family: var(--serif); font-weight: 500; line-height: .98; margin-bottom: 1.6rem; }
-.hero__script { display: block; font-family: var(--script); font-weight: 400; font-size: clamp(4.5rem, 13vw, 9rem); line-height: .72;
+.hero__script { display: block; font-family: var(--script); font-weight: 400; font-size: clamp(4.5rem, 13vw, 9rem); line-height: 1.04;
+  padding-top: .08em; overflow: visible;
   background: linear-gradient(120deg, #e7cf93, #c2a14d 55%, #a8862f); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.hero__serif { display: block; font-size: clamp(2rem, 6vw, 3.6rem); font-style: italic; color: var(--plum); margin-top: .08em; }
+.hero__serif { display: block; font-size: clamp(2rem, 6vw, 3.6rem); font-style: italic; color: var(--plum); margin-top: -.05em; }
 .hero__lede { max-width: 30rem; font-size: 1.1rem; color: var(--mauve); margin-bottom: 2.4rem; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 1rem; }
 .hero__tags { display: flex; flex-wrap: wrap; gap: .6rem 1.4rem; margin-top: 2.4rem; }
@@ -255,6 +256,36 @@ ul { list-style: none; }
 .ctaband p { color: rgba(252,246,242,.8); max-width: 34rem; margin: 0 auto 2rem; }
 .ctaband__actions { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
 
+/* ============================================================ RESERVA / FORM */
+.booking { padding: 0 var(--gut) clamp(4rem,8vw,7rem); max-width: var(--maxw); margin-inline: auto; }
+.booking__inner {
+  position: relative; overflow: hidden; border-radius: var(--radius);
+  background: radial-gradient(120% 130% at 88% 8%, rgba(219,140,127,.5), transparent 55%), linear-gradient(150deg, #6a403b, var(--plum));
+  color: var(--cream); display: grid; grid-template-columns: 1fr 1.05fr; gap: clamp(2rem,5vw,4rem);
+  padding: clamp(2.5rem,6vw,4.5rem);
+}
+.booking__intro .gem { width: 52px; color: var(--gold-lt); margin-bottom: 1.2rem; }
+.booking__intro .h2 { margin-bottom: 1rem; }
+.booking__lede { color: rgba(252,246,242,.82); margin-bottom: 1.6rem; max-width: 30rem; }
+.booking__perks { display: grid; gap: .6rem; }
+.booking__perks li { font-size: .9rem; color: rgba(252,246,242,.9); display: flex; align-items: center; gap: .7em; }
+.booking__perks li::before { content: "◆"; color: var(--gold-lt); font-size: .6em; }
+
+.booking__form { background: var(--white); border-radius: var(--radius-sm); padding: clamp(1.6rem,3vw,2.2rem); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.1rem; align-self: start; }
+.field { display: flex; flex-direction: column; gap: .4rem; }
+.field--full { grid-column: 1 / -1; }
+.field label { font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; color: var(--rose-deep); }
+.field input, .field select, .field textarea {
+  font-family: var(--sans); font-size: .95rem; color: var(--ink); background: var(--cream);
+  border: 1px solid rgba(181,115,106,.25); border-radius: 12px; padding: .8em 1em; width: 100%;
+  transition: border-color .3s var(--ease), box-shadow .3s var(--ease);
+}
+.field input::placeholder, .field textarea::placeholder { color: #b89a93; }
+.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--rose); box-shadow: 0 0 0 3px rgba(219,140,127,.18); }
+.field textarea { resize: vertical; }
+.booking__submit { width: 100%; }
+.booking__hint { font-size: .82rem; color: var(--mauve); margin-top: .8rem; text-align: center; min-height: 1.2em; }
+
 /* ============================================================ CONTACTO */
 .contact__inner { max-width: var(--maxw); margin-inline: auto; padding: clamp(4rem,10vw,8rem) var(--gut); display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(2.5rem,6vw,5rem); align-items: center; }
 .contact__lede { color: var(--mauve); font-size: 1.06rem; margin-bottom: 2.2rem; max-width: 34rem; }
@@ -295,6 +326,7 @@ ul { list-style: none; }
   .welcome { grid-template-columns: 1fr; }
   .welcome__media { order: -1; }
   .contact__inner { grid-template-columns: 1fr; }
+  .booking__inner { grid-template-columns: 1fr; }
   .gallery__grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 200px; }
 }
 @media (max-width: 560px) {
@@ -305,4 +337,5 @@ ul { list-style: none; }
   .welcome__stats { gap: 1.6rem; }
   .brand__badge { width: 44px; height: 44px; }
   .brand__script { font-size: 1.85rem; }
+  .booking__form { grid-template-columns: 1fr; }
 }

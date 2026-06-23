@@ -65,7 +65,7 @@
         <a href="#galeria">Galería</a>
         <a href="#contacto">Contacto</a>
       </nav>
-      <a href="#contacto" class="btn btn--gold nav__cta">Reservar</a>
+      <a href="#reserva" class="btn btn--gold nav__cta">Reservar</a>
       <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -79,7 +79,7 @@
       <a href="#experiencia">Experiencia</a>
       <a href="#galeria">Galería</a>
       <a href="#contacto">Contacto</a>
-      <a href="#contacto" class="btn btn--gold">Reservar</a>
+      <a href="#reserva" class="btn btn--gold">Reservar</a>
     </nav>
   </div>
 
@@ -99,7 +99,7 @@
             Cabello, uñas, spa y barbería — con la atención que mereces.
           </p>
           <div class="hero__actions">
-            <a href="#contacto" class="btn btn--gold">Agenda tu cita</a>
+            <a href="#reserva" class="btn btn--gold">Agenda tu cita</a>
             <a href="#servicios" class="btn btn--ghost">Ver servicios</a>
           </div>
           <div class="hero__tags">
@@ -110,10 +110,6 @@
         <div class="hero__media reveal">
           <img src="assets/img/gen/hero.jpg" alt="Clienta de Nouveau con peinado elegante en un ambiente cálido y rosado" />
           <span class="hero__ring" aria-hidden="true"></span>
-          <span class="hero__chip">
-            <img src="assets/img/brand/logo.png" alt="" />
-            <span>Tu momento Nouveau</span>
-          </span>
         </div>
       </div>
     </section>
@@ -234,7 +230,7 @@
           </article>
         </div>
 
-        <p class="services__note reveal">¿Lista para tu próxima cita? <a href="#contacto">Escríbenos</a> y con gusto te compartimos precios y disponibilidad.</p>
+        <p class="services__note reveal">¿Lista para tu próxima cita? <a href="#reserva">Reserva aquí</a> y con gusto te compartimos precios y disponibilidad.</p>
       </div>
     </section>
 
@@ -273,16 +269,55 @@
       <p class="gallery__cta reveal">Más momentos en Instagram <a href="https://instagram.com/nouveausalons" target="_blank" rel="noopener">@nouveausalons →</a></p>
     </section>
 
-    <!-- CTA BAND -->
-    <section class="ctaband">
-      <div class="ctaband__inner reveal">
-        <svg viewBox="0 0 220 200" class="gem" aria-hidden="true"><use href="#gem"/></svg>
-        <h2>Reserva tu momento Nouveau</h2>
-        <p>Cuéntanos qué necesitas y nuestro equipo diseñará la experiencia perfecta para ti.</p>
-        <div class="ctaband__actions">
-          <a href="https://wa.me/50760000000?text=Hola%20Nouveau%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita" class="btn btn--gold" target="_blank" rel="noopener">WhatsApp · 6000-0000</a>
-          <a href="https://instagram.com/nouveausalons" class="btn btn--ghost-light" target="_blank" rel="noopener">Instagram</a>
+    <!-- RESERVA -->
+    <section class="booking" id="reserva">
+      <div class="booking__inner">
+        <div class="booking__intro reveal">
+          <svg viewBox="0 0 220 200" class="gem" aria-hidden="true"><use href="#gem"/></svg>
+          <p class="eyebrow eyebrow--light"><span class="eyebrow__dot">◆</span> Reserva</p>
+          <h2 class="h2 h2--light">Reserva tu<br><em>momento Nouveau</em></h2>
+          <p class="booking__lede">Completa el formulario y te enviaremos por WhatsApp la confirmación de tu cita. También puedes escribirnos directo cuando quieras.</p>
+          <ul class="booking__perks">
+            <li>Atención personalizada</li>
+            <li>Confirmación rápida por WhatsApp</li>
+            <li>Lun a Sáb · 9:00 a.m. – 7:00 p.m.</li>
+          </ul>
         </div>
+
+        <form class="booking__form reveal" id="bookingForm" novalidate>
+          <div class="field">
+            <label for="bf-name">Nombre</label>
+            <input type="text" id="bf-name" name="name" placeholder="Tu nombre" required />
+          </div>
+          <div class="field">
+            <label for="bf-phone">Teléfono / WhatsApp</label>
+            <input type="tel" id="bf-phone" name="phone" placeholder="Ej. 6000-0000" required />
+          </div>
+          <div class="field">
+            <label for="bf-service">Servicio</label>
+            <select id="bf-service" name="service" required>
+              <option value="" disabled selected>Elige un servicio</option>
+              <option>Hair Care</option>
+              <option>Uñas</option>
+              <option>Spa</option>
+              <option>Barbershop</option>
+              <option>Boutique</option>
+              <option>Otro / No estoy segura</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="bf-date">Fecha preferida</label>
+            <input type="date" id="bf-date" name="date" />
+          </div>
+          <div class="field field--full">
+            <label for="bf-msg">Mensaje (opcional)</label>
+            <textarea id="bf-msg" name="message" rows="3" placeholder="Cuéntanos qué te gustaría..."></textarea>
+          </div>
+          <div class="field field--full">
+            <button type="submit" class="btn btn--gold booking__submit">Enviar por WhatsApp</button>
+            <p class="booking__hint" id="bookingHint" role="status"></p>
+          </div>
+        </form>
       </div>
     </section>
 
@@ -294,8 +329,8 @@
           <h2 class="h2">Te esperamos en Nouveau</h2>
           <p class="contact__lede">Estamos en Ciudad de Panamá, a pasos del Parque Omar. Escríbenos para agendar tu cita o resolver cualquier duda — será un placer atenderte.</p>
           <ul class="contact__list">
-            <li><span class="contact__label">Dirección</span>Planta baja, PH Ilina Iatorraca,<br>C. Matilde Obarrio de Mallet, San Francisco<br>Ciudad de Panamá, Panamá</li>
-            <li><span class="contact__label">Horario</span>Lunes a Sábado · 9:00 a.m. – 8:00 p.m.<br>Domingo · Cerrado</li>
+            <li><span class="contact__label">Dirección</span>San Francisco, Calle 74–75,<br>PH Lilina La Torraca, planta baja<br>Ciudad de Panamá, Panamá</li>
+            <li><span class="contact__label">Horario</span>Lunes a Sábado · 9:00 a.m. – 7:00 p.m.<br>Domingo · Cerrado</li>
             <li><span class="contact__label">WhatsApp</span><a href="https://wa.me/50760000000?text=Hola%20Nouveau%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita" target="_blank" rel="noopener">6000-0000</a></li>
             <li><span class="contact__label">Síguenos</span><a href="https://instagram.com/nouveausalons" target="_blank" rel="noopener">@nouveausalons</a></li>
           </ul>
@@ -305,7 +340,7 @@
         </div>
         <div class="contact__map reveal">
           <iframe title="Ubicación de Nouveau Salon &amp; Spa en Ciudad de Panamá"
-            src="https://www.google.com/maps?q=Nouveau%20Salon%20Spa%2C%20Calle%20Matilde%20Obarrio%20de%20Mallet%2C%20Panama&output=embed"
+            src="https://www.google.com/maps?q=Nouveau%20Salon%20Spa%2C%20San%20Francisco%2C%20Calle%2074%2C%20Panama&output=embed"
             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
