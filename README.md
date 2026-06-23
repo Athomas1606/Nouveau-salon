@@ -1,58 +1,55 @@
 # Nouveau Salon &amp; Spa — Sitio web
 
-Sitio web de una sola página para **Nouveau Salon &amp; Spa** (Ciudad de Panamá).
-Diseño artesanal, elegante y de lujo — sin plantillas genéricas.
-
-> Estética: blush / oro / negro / crema · tipografía serif de alto contraste
-> (Cormorant Garamond), script (Italianno) y sans geométrica (Jost) ·
-> logo de diamante en SVG · patrón de celosía inspirado en el papel tapiz real del local.
+Landing page de una sola página para **Nouveau Salon &amp; Spa** (Ciudad de Panamá).
+Diseño rosa, femenino y editorial — inspirado en [emmar.se](https://www.emmar.se)
+(editorial, aire, serif) y [ever.co.id](https://www.ever.co.id) (premium suave,
+rosado, formas redondeadas), adaptado al logo real de la marca.
 
 ## Estructura
 
 ```
-index.html            Página principal (todas las secciones)
-css/styles.css        Sistema de diseño completo (paleta, tipografía, layout, responsive)
-js/main.js            Nav fijo, menú móvil, animaciones de aparición, loader
-assets/favicon.svg    Logo de diamante (favicon)
-assets/img/real/      Fotos reales del salón (interior, letrero)
-assets/img/gen/       Carpeta para fotos profesionales adicionales
+index.html            Página principal
+css/styles.css        Sistema de diseño (paleta rosa/oro, tipografía, layout, responsive)
+js/main.js            Nav, menú móvil, animaciones, loader
+assets/img/brand/     Logo real de la marca (logo.png)
+assets/img/gen/       Fotografía editorial (hero, bienvenida, servicios)
+assets/img/real/      Fotos originales del local (no usadas en el sitio actual)
 ```
 
 ## Ver el sitio
 
-Es un sitio 100% estático. Ábrelo directamente o sirve la carpeta:
+Sitio 100% estático:
 
 ```bash
-python3 -m http.server 8080
-# luego abre http://localhost:8080
+python3 -m http.server 8080   # abre http://localhost:8080
 ```
 
-## ⚙️ Por personalizar (datos de marcador de posición)
+## Identidad
 
-Reemplaza estos valores con la información real del negocio:
+- **Paleta:** blush / rosa malva / oro champagne / plum oscuro / crema (derivada del logo).
+- **Tipografía:** Cormorant Garamond (display serif), Italianno (script), Jost (sans).
+- **Logo:** se usa el logo real de la marca como medallón + wordmark.
 
-1. **WhatsApp** — configurado como `6000-0000` (`wa.me/50760000000`). Ajusta si cambia.
-2. **Horario** — Lun–Sáb 9:00 a.m.–8:00 p.m., Dom cerrado (confirmado).
-3. **Dirección** — verifica la dirección exacta y, si quieres, el enlace del mapa.
-4. **Reseñas** — los testimonios son representativos; puedes sustituirlos por reseñas reales de Google.
+## Datos del negocio
 
-## 📸 Fotos
+- WhatsApp: **6000-0000** (`wa.me/50760000000`)
+- Horario: Lun–Sáb 9:00 a.m.–8:00 p.m. · Dom cerrado
+- Instagram: [@nouveausalons](https://instagram.com/nouveausalons)
+- Dirección: Planta baja, PH Ilina Iatorraca, C. Matilde Obarrio de Mallet, San Francisco, Ciudad de Panamá
 
-Imágenes ya integradas en `assets/img/gen/`:
+## Imágenes
 
-| Archivo              | Uso                  | Estado |
-|----------------------|----------------------|--------|
-| `hero.jpg`           | Fondo del hero       | ✅ integrada (recortada y tratada) |
-| `service-hair.jpg`   | Servicio Hair Care   | ✅ integrada |
-| `service-nails.jpg`  | Servicio Uñas        | ✅ integrada |
-| `service-spa.jpg`    | Servicio Spa         | ✅ integrada |
-| `service-barber.jpg` | Servicio Barbershop  | ⏳ pendiente — la tarjeta usa un mosaico de marca mientras tanto |
+| Archivo                  | Uso                  | Estado |
+|--------------------------|----------------------|--------|
+| `brand/logo.png`         | Logo de la marca     | ✅ real |
+| `gen/hero.jpg`           | Hero                 | ✅ |
+| `gen/welcome.jpg`        | Bienvenida + galería | ✅ |
+| `gen/service-hair.jpg`   | Hair Care + galería  | ✅ |
+| `gen/service-nails.jpg`  | Uñas + galería       | ✅ |
+| `gen/service-spa.jpg`    | Spa + galería        | ✅ |
+| `gen/service-barber.jpg` | Barbershop           | ⏳ pendiente — la tarjeta usa un mosaico de marca mientras tanto |
 
-Para añadir la de Barbershop: coloca `service-barber.jpg` (formato 4:5, paleta
-negro cálido + oro + rosa) en `assets/img/gen/` y avísame para conectarla.
-
-Paleta para mantener coherencia: **rosa malva, oro champagne, negro cálido, crema.**
-
----
-
-Hecho con cuidado para Nouveau Salon &amp; Spa · *Belleza que se siente.*
+> Nota: es una **demo**. Las fotografías editoriales son representativas y pueden
+> reemplazarse por sesión fotográfica real o imágenes generadas con ChatGPT
+> (paleta: rosa malva, oro champagne, crema). El logo es de baja resolución
+> (150×150); para producción conviene una versión vectorial/alta resolución.
